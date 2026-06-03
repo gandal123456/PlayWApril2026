@@ -1,0 +1,112 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "orangehrm-login;valid-login",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Valid Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1024052300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to url",
+            "match": {
+              "location": "src\\stepDefinitions\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1009031700,
+              "error_message": "page.goto: net::ERR_CONNECTION_CLOSED at https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n    at BasePage.<anonymous> (G:\\FINALPROJECT\\src\\pages\\BasePage.ts:14:25)\n    at G:\\FINALPROJECT\\src\\pages\\BasePage.ts:8:71\n    at __awaiter (G:\\FINALPROJECT\\src\\pages\\BasePage.ts:4:12)\n    at BasePage.navigate (G:\\FINALPROJECT\\src\\pages\\BasePage.ts:19:16)\n    at AllureCucumberWorld.<anonymous> (G:\\FINALPROJECT\\src\\stepDefinitions\\loginSteps.ts:13:17)\n    at G:\\FINALPROJECT\\src\\stepDefinitions\\loginSteps.ts:8:71\n    at __awaiter (G:\\FINALPROJECT\\src\\stepDefinitions\\loginSteps.ts:4:12)\n    at AllureCucumberWorld.<anonymous> (G:\\FINALPROJECT\\src\\stepDefinitions\\loginSteps.ts:22:12)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user enters username as \"Admin\"",
+            "match": {
+              "location": "src\\stepDefinitions\\loginSteps.ts:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "user enters password as \"admin123\"",
+            "match": {
+              "location": "src\\stepDefinitions\\loginSteps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "src\\stepDefinitions\\loginSteps.ts:26"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user should navigate to dashboard page",
+            "match": {
+              "location": "src\\stepDefinitions\\loginSteps.ts:31"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 177277500,
+              "error_message": "page.screenshot: Protocol error (Page.captureScreenshot): Unable to capture screenshot\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\n    at AllureCucumberWorld.<anonymous> (G:\\FINALPROJECT\\src\\hooks\\hooks.ts:31:39)\n    at G:\\FINALPROJECT\\src\\hooks\\hooks.ts:8:71\n    at __awaiter (G:\\FINALPROJECT\\src\\hooks\\hooks.ts:4:12)\n    at AllureCucumberWorld.<anonymous> (G:\\FINALPROJECT\\src\\hooks\\hooks.ts:27:12)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "orangehrm-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "OrangeHRM Login",
+    "tags": [],
+    "uri": "src\\features\\login.feature"
+  }
+]

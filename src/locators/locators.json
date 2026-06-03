@@ -1,0 +1,33 @@
+{
+  "login":
+          {
+             "username":"//*[@placeholder='Username']",
+             "password":"//*[@name='password']",
+             "loginBtn":"//*[@type='submit']",
+             "dashboard":"(//*[text()='Dashboard'])[2]",
+             "invalidCredentials":"//*[text()='Invalid credentials']"
+          },
+    "search":
+          {
+             "adminTab":"//*[@class='oxd-main-menu-item']//*[text()='Admin']",
+             "username":"(//*[@class='oxd-input oxd-input--active'])[2]",
+             "searchBtn":"//*[text()=' Search ']",
+             "recordFound":"//*[text()='(1) Record Found']"
+          }      
+      ,
+       "addUser":
+          {
+          "addBtn":"//*[text()=' Add ']",
+          "userRoleDropdown":"//label[text()='User Role']/../following-sibling::div//div",
+          "userRoleOption":"//*[contains(@class,'oxd-select-dropdown')]//*[text()='{ROLE}']",
+          "employeeName":"//*[@placeholder='Type for hints...']",
+          "employeeSuggestion":"//*[contains(@class,'oxd-autocomplete-dropdown')]//span[text()='{EMPLOYEE}']",
+          "newUsername":"//label[text()='Username']/../following-sibling::div//input",
+          "statusDropdown":"//label[text()='Status']/../following-sibling::div//div",
+          "statusOption":"//*[contains(@class,'oxd-select-dropdown')]//*[text()='{STATUS}']",
+          "password":"//label[text()='Password']/../following-sibling::div//input",
+          "confirmPassword":"//label[text()='Confirm Password']/../following-sibling::div//input",
+          "saveBtn":"//*[text()=' Save ']",
+          "successMessage":"//*[contains(text(),'Successfully Saved') or contains(text(),'Successfully Added')]"
+          }
+}
